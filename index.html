@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Application</title>
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header>
+      <h1 id="title">Job Application</h1>
+      <p id="description">We are an equal opportunity employer, dedicated to a policy of nondescrimination in employment on any basis including race, color, age, sex, religion, disability or national origin</p>
+    </header>
+    
+    <form action="/#" id="survey-form">
+
+      <div id="basic-information">
+        <fieldset>
+          <legend>Basic Information</legend>
+          <div id="date-section">
+            <label for="todays-date">Today's Date</label>
+            <input type="date" name="todays-date" id="todays-date" placeholder="Today's date">
+          </div>
+          <div class="clearfix"></div>
+          <div id="name-section">
+            <label for="last-name">*Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+            
+            <label for="first-name">*First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+
+            <label for="middle-initial">MI</label>
+            <input type="text" name="middle-initial" id="middle-initial" placeholder="MI">
+          </div>
+          <div class="clearfix"></div>
+          <div id="contact-section">
+            <label for="email">*Email </label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <label for="phone-number">Phone Number</label>
+            <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number">
+          </div>
+          <div class="clearfix"></div>
+          <div id="address-section">
+            <label for="address">*Street Address</label>
+            <input type="text" name="address" id="address" placeholder="address">
+
+            <label for="apartment-number">Apartment Number</label>
+            <input type="text" name="apartment-number" id="apartment-number" placeholder="apt #">
+
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="City">
+
+            <label for="state">State</label>
+            <select type="text" name="state" id="state">
+              <option>Alabama</option>
+              <option>Alaska</option>
+              <option>Arizona</option>
+              <option>Arkansas</option>
+              <option>California</option>
+              <option>Colorado</option>
+              <option>Connecticut</option>
+              <option>Delaware</option>
+              <option>District Of Columbia</option>
+              <option>Florida</option>
+              <option>Georgia</option>
+              <option>Hawaii</option>
+              <option>Idaho</option>
+              <option>Illinois</option>
+              <option>Indiana</option>
+              <option>Iowa</option>
+              <option>Kansas</option>
+              <option>Kentucky</option>
+              <option>Louisiana</option>
+              <option>Maine</option>
+              <option>Maryland</option>
+              <option>Massachusetts</option>
+              <option>Michigan</option>
+              <option>Minnesota</option>
+              <option>Mississippi</option>
+              <option>Missouri</option>
+              <option>Montana</option>
+              <option>Nebraska</option>
+              <option>Nevada</option>
+              <option>New Hampshire</option>
+              <option>New Jersey</option>
+              <option>New Mexico</option>
+              <option>New York</option>
+              <option>North Carolina</option>
+              <option>North Dakota</option>
+              <option>Ohio</option>
+              <option>Oklahoma</option>
+              <option>Oregon</option>
+              <option>Pennsylvania</option>
+              <option>Rhode Island</option>
+              <option>South Carolina</option>
+              <option>South Dakota</option>
+              <option>Tennessee</option>
+              <option>Texas</option>
+              <option>Utah</option>
+              <option>Vermont</option>
+              <option>Virginia</option>
+              <option>Washington</option>
+              <option>West Virginia</option>
+              <option>Wisconsin</option>
+              <option>Wyoming</option>
+            </select>
+            <label for="zip-code">Zip Code</label>
+            <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code">
+          </div>
+          <div class="clearfix"></div>
+          <div id="social-security-section">
+            <label for="social-security-number">Social Security Number</label>
+            <input type="text" name="social-security-number" id="social-security-number" placeholder="***-**-****">
+          </div>
+          <div class="clearfix"></div>
+          <div id="date-available-desired-salary-position-appkying-for-section">
+            <label for="date-available">Date Available</label>
+            <input type="text" name="date-available" id="date-available" placeholder="Date Available">
+              
+            <label for="desired-salary">Desired Salary</label>
+            <input type="text" name="desired-salary" id="desired-salary" placeholder="Desired Salary">
+              
+            <label for="position-applying-for">Position Applying For</label>
+            <input type="text" name="position-applying-for" id="position-applying-for" placeholder="Position Applying for">
+
+            <label>What type of employment are you seeking?</label>
+            <label for="type-full">Full-Time
+              <input type="radio" id="type-full" name="employment-type">
+            </label>
+            <label for="type-part">Part-Time
+              <input type="radio" id="type-part" name="employment-type">
+            </label>
+            <label for="type-seasonal">Seasonal
+              <input type="radio" id="type-seasonal" name="employment-type">
+            </label>
+            <label for="type-temp">Temporary
+              <input type="radio" id="type-temp" name="employment-type">
+            </label>
+          </div>
+          <div class="clearfix"></div>
+          <div id="current-legal-status-section">
+            <label>Are you a citizen of the United States?</label>
+            <label for="citizen-yes">yes
+            <input type="radio" id="citizen-yes" name="citizen">
+            </label>
+            <label for="citizen-no">No
+            <input type="radio" id="citizen-no" name="citizen">
+            </label>
+
+            <label>If no, are you authorized to work in the United States</label>
+            <label for="authorized-yes">Yes
+              <input type="radio" id="authorized-yes" name="authorized">
+            </label>
+            <label for="authorized-no">No
+              <input type="radio" id="authorized-no" name="authorized">
+            </label>
+
+            <label>Have you ever worked for this company?</label>
+            <label for="ever-yes">Yes
+              <input type="radio" id="ever-yes" name="ever-worked">
+            </label>
+            <label for="ever-no">No
+              <input type="radio" id="ever-no" name="ever-worked">
+            </label>
+
+            <label>If so, when</label>
+            <input type="text">
+
+            <label>Are you currently employed?</label>
+            <label for="current-yes">Yes
+              <input type="radio" id="current-yes" name="currently">
+            </label>
+            <label for="current-no">No
+              <input type="radio" id="current-no" name="currently">
+            </label>
+
+            <label>If so, may we contact your employer?</label>
+            <label for="contact-yes">Yes
+              <input type="radio" id="contact-yes" name="contact-employer">
+            </label>
+            <label for="contact-no">No
+              <input type="radio" id="contact-no" name="contact-employer">
+            </label>
+          </div>
+          <div class="clearfix"></div>
+        </fieldset>
+      </div>
+      
+      <div id="education-skills">
+        <fieldset>
+          <legend>Education and Skills</legend>
+          <div id="high-school-information">
+            <label for="high-school-name">High School</label>
+            <input type="text" name="high-school-name" id="high-school-name">
+
+            <label for="high-school-address">Address</label>
+             <input type="text" name="high-school-address" id="high-school-address">
+
+             <label for="high-school-from">From</label>
+             <input type="text" id="high-school-from" name="high-school-from">
+
+            <label for="high-school-to">to</label>
+            <input type="text" id="high-school-to" name="high-school-to">
+
+            <label>Did you graduate?</label>
+            <label for="high-school-did-you-graduate-yes">Yes
+              <input type="radio" id="high-school-did-you-graduate-yes" name="high-school-did-you-graduate-high-school">
+            </label>
+            <label for="high-school-did-you-graduate-no">No
+              <input type="radio" id="high-school-did-you-graduate-no" name="high-school-did-you-graduate-high-school">
+            </label>
+          </div>
+
+          <div id="college-or-trade-school-information">
+            <label for="college-or-trade-school-name">College or trade school</label>
+            <input type="text" id="college-or-trade-school-name" name="college-or-trade-school-name">
+            <label for="college-or-trade-school-address">Address</label>
+            <input type="text" id="college-or-trade-school-address" name="college-or-trade-school-address">
+            <label for="college-or-trade-school-from">From</label>
+            <input type="text" id="college-or-trade-school-from" name="college-or-trade-school-from">
+            <label for="college-or-trade-school-to">To</label>
+            <input type="text" id="college-or-trade-school-to" name="college-or-trade-school-to">
+            <label>Did you graduate</label>
+            <label for="college-or-trade-school-did-you-graduate-yes">Yes
+              <input type="radio" id="college-or-trade-school-did-you-graduate-yes" name="college-or-trade-school-did-you-graduate-yes">
+            </label>
+            <label for="college-or-trade-school-did-you-graduate-no">No
+              <input type="radio" id="college-or-trade-school-did-you-graduate-no" name="college-or-trade-school-did-you-graduate-no">
+            </label>
+          </div>
+
+          <div id="additional-skills">
+            <label>Words per minute</label>
+            <input type="text">
+          </div>
+        </fieldset>
+      </div>
+
+      <div id="work-history">
+        <fieldset>
+          <legend>Work History</legend>
+
+          <div id="company-1-information">
+            <div id="company-1-location-information">
+              <label for="company-1-name">Company</label>
+              <input type="text" id="company-1-name" name="company-1-name">
+
+              <label for="company-1-address">Address</label>
+              <input type="text" id="company-1-address" name="company-1-address">
+
+              <label for="company-1-phone-number">Phone Number</label>
+              <input type="text" id="company-1-phone-number" name="company-1-phone-number">
+            </div>
+            <div id="company-1-longevity-information">
+              <label for="company-1-from">From</label>
+              <input type="text" id="company-1-from" name="company-1-from">
+              
+              <label for="company-1-to">To</label>
+              <input type="text" id="company-1-to" name="company-1-to">
+            </div>
+            <div id="company-1-title-and-responsibilities">
+              <label for="company-1-supervisor">Supervisor</label>
+              <input type="text" id="company-1-supervisor" name="company-1-supervisor">
+              
+              <label for="company-1-job-title">Job Title</label>
+              <input type="text" id="company-1-job-title" name="company-1-job-title">
+              
+              <label for="company-1-responsibilities">Responsibilities</label>
+              <input type="text" id="company-1-responsibilities" name="company-1-responsibilities">
+            </div>
+            <div id="company-1-salary-information">
+              <label for="company-1-starting-salary">Starting Salary</label>
+              <input type="text" id="company-1-starting-salary" name="company-1-starting-salary">
+              
+              <label for="company-1-ending-salary">Ending Salary</label>
+              <input type="text" id="company-1-ending-salary" name="company-1-ending-salary">
+            </div>
+          </div>
+
+          <div id="company-2-information">
+            <div id="company-2-location-information">
+              <label for="company-2-name">Company</label>
+              <input type="text" id="company-2-name" name="company-2-name">
+              
+              <label for="company-2-address">Address</label>
+              <input type="text" id="company-2-address" name="company-2-address">
+              
+              <label for="company-2-phone-number">Phone Number</label>
+              <input type="text" id="company-2-phone-number" name="company-2-phone-number">
+            </div>
+
+            <div id="company-2-longevity-information">
+              <label for="company-2-from">From</label>
+              <input type="text" id="company-2-from" name="company-2-from">
+              
+              <label for="company-2-to">To</label>
+              <input type="text" id="company-2-to" name="company-2-to">
+            </div>
+            <div id="company-2-title-and-responsibilities">
+              <label for="company-2-supervisor">Supervisor</label>
+              <input type="text" id="company-2-supervisor" name="company-2-supervisor">
+              
+              <label for="company-2-job-title">Job Title</label>
+              <input type="text" id="company-2-job-title" name="company-2-job-title">
+              
+              <label for="company-2-responsibilities">Responsibilities</label>
+              <input type="text" id="company-2-responsibilities" name="company-2-responsibilities">
+            </div>
+            <div id="company-2-salary-information">
+              <label for="company-2-starting-salary">Starting Salary</label>
+              <input type="text" id="company-2-starting-salary" name="company-2-starting-salary">
+              
+              <label for="company-2-ending-salary">Ending Salary</label>
+              <input type="text" id="company-2-ending-salary" name="company-2-ending-salary">
+            </div>
+          </div>
+
+          <div id="company-3-information">
+            <div id="company-3-location-information">
+              <label for="company-3-name">Company</label>
+              <input type="text" id="company-3-name" name="company-3-name">
+
+              <label for="company-3-address">Address</label>
+              <input type="text" id="company-3-address" name="company-3-address">
+
+              <label for="company-3-phone-number">Phone Number</label>
+              <input type="text" id="company-3-phone-number" name="company-3-phone-number">
+            </div>
+            <div id="company-3-longevity-information">
+              <label for="company-3-from">From</label>
+              <input type="text" id="company-3-from" name="company-3-from">
+
+              <label for="company-3-to">To</label>
+              <input type="text" id="company-3-to" name="company-3-to">
+            </div>
+            <div id="company-3-title-and-responsibilities">
+              <label for="company-3-supervisor">Supervisor</label>
+              <input type="text" id="company-3-supervisor" name="company-3-supervisor">
+
+              <label for="company-3-job-title">Job Title</label>
+              <input type="text" id="company-3-job-title" name="company-3-job-title">
+
+              <label for="company-3-responsibilities">Responsibilities</label>
+              <input type="text" id="company-3-responsibilities" name="company-3-responsibilities">
+            </div>
+            <div id="company-3-salary-information">
+              <label for="company-3-starting-salary">Starting Salary</label>
+              <input type="text" id="company-3-starting-salary" name="company-3-starting-salary">
+
+              <label for="company-3-ending-salary">Ending Salary</label>
+              <input type="text" id="company-3-ending-salary" name="company-3-ending-salary">
+            </div>
+          </div>
+
+          <div id="company-4-information">
+            <div id="company-4-location-information">
+              <label for="company-4-name">Company</label>
+              <input type="text" id="company-4-name" name="company-4-name">
+
+              <label for="company-4-address">Address</label>
+              <input type="text" id="company-4-address" name="company-4-address">
+              
+              <label for="company-4-phone-number">Phone Number</label>
+              <input type="text" id="company-4-phone-number" name="company-4-phone-number">
+            </div>
+            <div id="company-4-longevity-information">
+              <label for="company-4-from">From</label>
+              <input type="text" id="company-4-from" name="company-4-from">
+              
+              <label for="company-4-to">To</label>
+              <input type="text" id="company-4-to" name="company-4-to">
+            </div>
+            <div id="company-4-title-and-responsibilities">
+              <label for="company-4-supervisor">Supervisor</label>
+              <input type="text" id="company-4-supervisor" name="company-4-supervisor">
+              
+              <label for="company-4-job-title">Job Title</label>
+              <input type="text" id="company-4-job-title" name="company-4-job-title">
+              
+              <label for="company-4-responsibilities">Responsibilities</label>
+              <input type="text" id="company-4-responsibilities" name="company-4-responsibilities">
+            </div>
+            <div id="company-4-salary-information">
+              <label for="company-4-starting-salary">Starting Salary</label>
+              <input type="text" id="company-4-starting-salary" name="company-4-starting-salary">
+              
+              <label for="company-4-ending-salary">Ending Salary</label>
+              <input type="text" id="company-4-ending-salary" name="company-4-ending-salary">
+            </div>
+          </div>
+          <input type="button" value="Submit">
+        </fieldset>
+      </div>
+    </form>
+    <footer>Copyright &copy; 2018 <a href="https://www.JasonThomasHolmes.com">Jason Thomas Holmes</a> Designs</footer>
+  </body>
+</html>
